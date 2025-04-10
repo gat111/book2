@@ -4,7 +4,7 @@ FROM tomcat:10-jdk17
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # WARファイルをコピー (リポジトリのルートに置いたWARファイル名を指定)
-COPY app.war /usr/local/tomcat/webapps/ROOT.war
+COPY book.war /usr/local/tomcat/webapps/ROOT.war
 
 # ポート設定
 ENV PORT 8080
